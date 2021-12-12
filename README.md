@@ -11,6 +11,18 @@ Connects to NFTPort API and downloads all NFTs & metadata as per the contract ad
 
 Example usage in `nft_orchestration.py`
 
+Before running the backend, the following env variables need to be setup in `docker-compose.env` file
+```
+NODE_ENV=production
+GCP_PROJECT_ID=mentorapp-325205
+GCP_SA_KEY=/src/secrets/mentorapp-service-account-datalake.json
+NFTPORT_API_URL=https://api.nftport.xyz/v0/nfts/
+NFTPORT_API_KEY=d3d10f13-6f3f-407b-9981-0a419b8b994b
+```
+where
+GCP_PROJECT_ID is the google cloud platform project id
+GCP_SA_KEY is the service account key with access to GCS
+
 Deploy nft orchestration:
 
 ```
