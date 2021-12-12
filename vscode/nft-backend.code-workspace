@@ -1,0 +1,17 @@
+{
+	"folders": [
+	  {
+		"name": "✨NFTBackend",
+		"path": ".."
+	  },
+	  {
+		"name": "🚀 @NFTBackend/nft_orchestration",
+		"path": "../packages/nft_orchestration"
+	  },
+	],
+	"settings": {
+	  "editor.codeActionsOnSave": {
+		"source.fixAll": true
+	  },
+	}
+  } 
