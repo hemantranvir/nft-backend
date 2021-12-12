@@ -56,3 +56,5 @@ $ NODE_ENV=test npm run test
 - We can use microservices to make the backend architecture more scalable
 - Error handling can be improved a lot
 - Better queing system for fetching nfts if the job fails etc. Using bullmq to schedule jobs
+- For the test task, the API keys etc. are commited in the github repo but should be
+avoided in production
