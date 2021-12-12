@@ -88,11 +88,8 @@ const download_collections = async collections => {
             Authorization: nftport_api_key,
           },
         }
-        console.log('contract address: ', contract_address)
 
-        // const response = await axios.get(options)
         const response = await axios_request(options, idx)
-        // console.log('response is: ', response.data)
         if (response.data.response === 'OK') {
           const { nfts } = response.data
           await Promise.all(

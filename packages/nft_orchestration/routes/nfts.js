@@ -10,7 +10,6 @@ const router = express.Router()
 router.get('/searchbyname', async (req, res) => {
   try {
     const { name } = req.query
-    console.log('searchbyname api called')
     const nfts = await NFTData.find({ name: { $regex: `${name}` } })
     res.status(200).json(nfts)
   } catch (err) {
@@ -41,7 +40,6 @@ router.get('/contractaddress', async (req, res) => {
 // @access Public
 router.post('/addcontractaddress', async (req, res) => {
   try {
-    console.log('add contract address api called')
     const { contract_address } = req.body
     await download_collections([contract_address])
     const nfts = await NFTData.find({ contract_address })
