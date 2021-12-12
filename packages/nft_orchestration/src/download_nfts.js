@@ -40,9 +40,7 @@ const folder = 'nft_backend'
 const uploadURLToGCS = async (cached_file_url, file_url) => {
   try {
     const file_to_upload = cached_file_url || file_url
-    const file_name = file_to_upload
-      ? file_to_upload.split('/').pop()
-      : file_to_upload
+    const file_name = file_to_upload.split('/').pop()
     const newFileName = `${folder}/${file_name}`
 
     const fileUpload = bucket.file(newFileName)
