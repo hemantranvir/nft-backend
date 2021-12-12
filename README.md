@@ -1,10 +1,5 @@
 # NFTPort Backend Test Assignment
 
-### Getting NFTs
-
-Use this [API endpoint](https://docs.nftport.xyz/docs/nftport/b3A6MjAzNDUzNTQ-retrieve-contract-nf-ts)
-to fetch all contract addresses and token ids.
-
 ### Build & Deploy NFT Orchestration
 
 Connects to NFTPort API and downloads all NFTs & metadata as per the contract addresses in `collections.json`
