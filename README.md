@@ -53,6 +53,7 @@ $ cd packages/nft_orchestration
 $ NODE_ENV=test npm run test
 ```
 ### NFT Orchestration Potential Improvements
+- Use Typescript for strict typing
 - We can use microservices to make the backend architecture more scalable
 - Error handling can be improved a lot
 - Better queing system for fetching nfts if the job fails etc. Using bullmq to schedule jobs
